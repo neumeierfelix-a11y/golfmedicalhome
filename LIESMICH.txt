@@ -1,0 +1,32 @@
+NEUMEIER GOLF MEDICAL PHYSIOTHERAPIE — WEBSITE
+==============================================
+
+STATUS: Alle Fotos, Videos und das echte Logo sind eingebunden. Die Seite ist
+inhaltlich fertig und live-fähig.
+
+WICHTIG — ORDNERSTRUKTUR JETZT KOMPLETT FLACH:
+Es gibt keine Unterordner (assets/img, assets/fonts) mehr! Alle Dateien
+liegen direkt nebeneinander im selben Verzeichnis wie index.html. Grund:
+Beim letzten Live-Gang wurden beim manuellen Hochladen über die
+GitHub-Weboberfläche Unterordner nicht mitgenommen, wodurch Bilder, Logo
+und Schriften auf der Live-Seite kaputt waren. Die flache Struktur macht
+das Hochladen narrensicher.
+
+BEIM HOCHLADEN INS GITHUB-REPO:
+  - ALLE Dateien aus diesem Ordner auf einmal auswählen und hochladen
+    (auch die unscheinbaren: .nojekyll, CNAME, robots.txt, sitemap.xml).
+  - .nojekyll hat keinen Dateinamen vor dem Punkt — in Windows ggf. unter
+    "Ansicht → Ausgeblendete Elemente" sichtbar machen, sonst wird sie beim
+    Auswählen übersehen.
+  - Bestehende gleichnamige Dateien im Repo werden beim Upload automatisch
+    überschrieben — das ist gewollt.
+  - Nach dem Upload 1-2 Minuten warten, dann die Live-Seite neu laden
+    (ggf. mit Strg+F5, um den Browser-Cache zu umgehen).
+
+NOCH ZU TUN:
+  - Domain golf-medical.de mit GitHub Pages verbinden: CNAME-Datei liegt bereit,
+    DNS beim Domain-Registrar muss noch auf GitHub Pages zeigen (A-Records bzw.
+    CNAME-Record gemäß GitHub-Doku) und "Enforce HTTPS" in den Pages-Settings
+    aktiviert werden.
+  - Empfehlung: hero.mp4 (4,4 MB) und about.mp4 (3,2 MB) bei Gelegenheit weiter
+    komprimieren, für schnelleres Laden auf mobilen Verbindungen.
