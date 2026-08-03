@@ -283,7 +283,23 @@ footer{border-top:1px solid var(--line);background:var(--green-0);}
 .foot-links a{color:var(--sage);text-decoration:none;transition:color .2s;}
 .foot-links a:hover{color:var(--cream);}
 .foot-copy{width:100%;color:rgba(157,179,165,.6);font-size:.75rem;padding-top:1rem;
-  border-top:1px solid rgba(201,165,78,.12);margin-top:1rem;}
+  border-top:1px solid rgba(201,165,78,.12);margin-top:1rem;line-height:1.7;}
+.foot-copy a{color:var(--gold-soft);text-decoration:underline;text-underline-offset:2px;}
+
+/* ---- KI-Kennzeichnung (Transparenz nach EU AI Act, Art. 50) ---- */
+.ai-tag{
+  position:absolute;bottom:.65rem;right:.65rem;z-index:4;
+  display:inline-flex;align-items:center;gap:.4rem;
+  font-family:var(--font-body);font-weight:500;
+  font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--cream);background:rgba(15,42,32,.72);
+  border:1px solid var(--line);border-radius:2px;
+  padding:.32rem .55rem;backdrop-filter:blur(4px);
+  pointer-events:none;user-select:none;white-space:nowrap;
+}
+.ai-tag::before{content:'';width:5px;height:5px;flex:none;
+  background:var(--gold);transform:rotate(45deg);}
+@media(max-width:520px){.ai-tag{font-size:.52rem;padding:.28rem .45rem;bottom:.5rem;right:.5rem;}}
 
 /* ---- Reveal ---- */
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease;}
@@ -355,6 +371,7 @@ footer{border-top:1px solid var(--line);background:var(--green-0);}
       <a href="#screening" class="btn btn-ghost">Wie das Screening läuft</a>
     </div>
   </div>
+  <span class="ai-tag">KI-generiert</span>
 </header>
 
 <div class="swing reveal-swing" aria-hidden="true">
@@ -374,7 +391,8 @@ footer{border-top:1px solid var(--line);background:var(--green-0);}
       <strong>Also messe ich sie, bevor irgendwer korrigiert.</strong></p>
   </div>
   <div class="think-photo">
-    <img src="felix-side.png" alt="Felix Neumeier im Golfschwung"/>
+    <img src="felix-backswing.png" alt="Felix Neumeier im Golfschwung"/>
+    <span class="ai-tag">KI-generiert</span>
   </div>
 </section>
 
@@ -455,6 +473,7 @@ footer{border-top:1px solid var(--line);background:var(--green-0);}
     </div>
     <div class="about-photo">
       <img src="felix-portrait.png" alt="Felix Neumeier, Physiotherapeut"/>
+      <span class="ai-tag">KI-generiert</span>
     </div>
   </div>
 </section>
@@ -465,6 +484,7 @@ footer{border-top:1px solid var(--line);background:var(--green-0);}
     <source data-src="about.mp4" type="video/mp4"/>
   </video>
   <div class="filmband-cap"><span>Ihr Spiel beginnt, bevor der erste Ball fliegt.</span></div>
+  <span class="ai-tag">KI-generiert</span>
 </section>
 
 <!-- ============ 6 · KONTAKT ============ -->
@@ -502,10 +522,14 @@ footer{border-top:1px solid var(--line);background:var(--green-0);}
     <div class="foot-links">
       <a href="impressum.html">Impressum</a>
       <a href="datenschutz.html">Datenschutz</a>
+      <a href="datenschutz.html#ki">KI-Transparenz</a>
       <a href="tel:+4915128700441">Telefon</a>
       <a href="mailto:neumeier@golf-medical.de">E-Mail</a>
     </div>
-    <div class="foot-copy">© 2026 Felix Neumeier · Neumeier Golf Medical Physiotherapie · Mühldorf am Inn</div>
+    <div class="foot-copy">
+      Bild- und Videomaterial auf dieser Website wurde teilweise mithilfe künstlicher Intelligenz (KI) erstellt oder bearbeitet und ist entsprechend gekennzeichnet. <a href="datenschutz.html#ki">Mehr dazu</a>.<br/>
+      © 2026 Felix Neumeier · Neumeier Golf Medical Physiotherapie · Mühldorf am Inn
+    </div>
   </div>
 </footer>
 
